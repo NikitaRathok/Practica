@@ -1,0 +1,8 @@
+C:\TRASH\c#\zadanie2\num3\bin\Debug\num3.exe.config
+C:\TRASH\c#\zadanie2\num3\bin\Debug\num3.exe
+C:\TRASH\c#\zadanie2\num3\bin\Debug\num3.pdb
+C:\TRASH\c#\zadanie2\num3\obj\Debug\num3.csproj.SuggestedBindingRedirects.cache
+C:\TRASH\c#\zadanie2\num3\obj\Debug\num3.csproj.CoreCompileInputs.cache
+C:\TRASH\c#\zadanie2\num3\obj\Debug\num3.exe
+C:\TRASH\c#\zadanie2\num3\obj\Debug\num3.pdb
+C:\TRASH\c#\zadanie2\num3\obj\Debug\num3.csproj.AssemblyReference.cache
