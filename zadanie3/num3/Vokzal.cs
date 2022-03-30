@@ -8,102 +8,45 @@ namespace num3
 {
      class Vokzal:Poezd
     {
-        private Poezd [] poezd;
+        private Poezd [] poezda;
 
         public Vokzal():base()
         {
             
             int len = 0;
-            poezd = new Poezd[len];
+            poezda = new Poezd[len];
         }
         
 
         public void Print()
         {
-            for (int i = 0; i < poezd.Length; i++)
+            for (int i = 0; i < poezda.Length; i++)
             {
-                Console.WriteLine($"Индекс поезд: {poezd[i].Index}");
-                Console.WriteLine($"Пункт назначения: { poezd[i].PunktNaz}");
-                Console.WriteLine($"номер поезда: {poezd[i].NumberP}" );
-                Console.WriteLine($"Время отправления: {poezd[i].Time}");
+                Console.WriteLine($"Индекс поезд: {poezda[i].Index}");
+                Console.WriteLine($"Пункт назначения: { poezda[i].PunktNaz}");
+                Console.WriteLine($"номер поезда: {poezda[i].NumberP}" );
+                Console.WriteLine($"Время отправления: {poezda[i].Time}");
                 
             }
         }
         public void Add()
         {
-            Console.WriteLine("Введите индекс");
-            int f = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Введите пункт назначения"); 
-            string n = Console.ReadLine();
-
-            Console.WriteLine("Введите номер поезда");
-            string a = Console.ReadLine();
-
-            Console.WriteLine("Введите время");
-            double y = Convert.ToDouble(Console.ReadLine());
+            Array.Resize(ref poezda, poezda.Length + 1);
+            poezda[poezda.Length - 1] = new Poezd(Index,PunktNaz, NumberP,Time );
+        }
+        public Poezd[] InfoTime(DateTime time)
+        {
+           //LINQ
+           return poezda.Where(p=>p.Time ==time).ToArray();
             
-            Array.Resize(ref poezd, poezd.Length + 1);
-            poezd[poezd.Length - 1] = new Poezd(f,n, a, y);
         }
-        public void InfoTime()
+        public Poezd[] ShowEndPunct(string punkt) 
         {
-            Console.Write("Введите время: ");
-            double time = Convert.ToDouble(Console.ReadLine());
-            int num = 0;
-            for (int i = 0; i < poezd.Length; i++)
-            {
-                if (poezd[i].Time < time)
-                {
-                    Console.WriteLine($"Индекс поезд: {poezd[i].Index}");
-                    Console.WriteLine($"Пункт назначения: { poezd[i].PunktNaz}");
-                    Console.WriteLine($"номер поезда: {poezd[i].NumberP}");
-                    Console.WriteLine($"Время отправления: {poezd[i].Time}");
-                    num++;
-                }
-            }
-            if (num == 0)
-                Console.WriteLine("После введённого времени поездов нет");
-
+            return poezda.Where(p => p.PunktNaz == punkt).ToArray();
         }
-        public void ShowEndPunct() 
+        public Poezd[] ShowIndex(int index)
         {
-            Console.Write("Введите пункт назначения: ");
-            string punkt = Console.ReadLine();
-            int num = 0;
-            for (int i = 0; i < poezd.Length; i++)
-            {
-                if (poezd[i].PunktNaz == punkt)
-                {
-                    Console.WriteLine($"Индекс поезд: {poezd[i].Index}");
-                    Console.WriteLine($"Пункт назначения: { poezd[i].PunktNaz}");
-                    Console.WriteLine($"номер поезда: {poezd[i].NumberP}");
-                    Console.WriteLine($"Время отправления: {poezd[i].Time}");
-                    num++;
-                }
-            }
-            if (num == 0)
-                Console.WriteLine("В заданный пункт назначения поезда не ходят!");
-        }
-        public void ShowIndex()
-        {
-            Console.Write("Введите время: ");
-            int index = Convert.ToInt32(Console.ReadLine());
-            int num = 0;
-            for (int i = 0; i < poezd.Length; i++)
-            {
-                if (poezd[i].Index == index)
-                {
-                    Console.WriteLine($"Индекс поезд: {poezd[i].Index}");
-                    Console.WriteLine($"Пункт назначения: { poezd[i].PunktNaz}");
-                    Console.WriteLine($"номер поезда: {poezd[i].NumberP}");
-                    Console.WriteLine($"Время отправления: {poezd[i].Time}");
-                    num++;
-
-                }
-            }
-            if (num == 0)
-                Console.WriteLine("Такого индекса нет");
+            return poezda.Where(p => p.Index == Index).ToArray();
         }
 
     }

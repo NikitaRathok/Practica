@@ -8,34 +8,28 @@ namespace num1
 {
     internal class Program
     {
-        public class Calculation
-        {
-            public int x;
-            public void Func(int x)
+        
+            public static int Func(int x)
             {
                 if (x % 5 == 0)
                 {
-                    x = x - 5;
-                    Console.WriteLine(x);
+                   return x = x - 5;
+                   
                 }
                 else
                 {
-                    x++;
-                    Console.WriteLine(x);
+                    return x++;
+                    
                 }
             }
-            public Calculation()
-            {
-
-            }
-        }
-        
+            
         static void Main(string[] args)
         {
-            Calculation f = new Calculation();
-            Console.WriteLine("Введите переменную x");
-            f.x = int.Parse(Console.ReadLine());
-            f.Func(f.x);
+            Console.WriteLine("Введите х");
+            int x = int.Parse(Console.ReadLine());
+            var rez = Func(x);
+
+            Console.WriteLine(rez);
 
         }
     }

@@ -8,12 +8,12 @@ namespace num3
 {
      class Poezd
     {
-        public string PunktNaz { get; private set; }
-        public string NumberP { get; private set; }
-        public double Time { get; private set; }
-        public int Index { get; private set; }
+        public string PunktNaz { get;  set; }
+        public string NumberP { get;  set; }
+        public DateTime Time { get;  set; }
+        public int Index { get;  set; }
 
-        public Poezd(int index,string punktNaz, string numberP,double time)
+        public Poezd(int index,string punktNaz, string numberP,DateTime time)
         {
             PunktNaz = punktNaz;
             NumberP = numberP;
@@ -26,7 +26,7 @@ namespace num3
         }
         public static bool operator >(Poezd p1, Poezd p2)
         {
-            for (double i = 0; i < p1.Time; i++)
+            for (double i = 0; i < p1.Index; i++)
             {
                 if (p1 > p2)
                 {
@@ -38,7 +38,7 @@ namespace num3
         }
         public static bool operator <(Poezd p1, Poezd p2)
         {
-            for (double i = 0; i < p1.Time; i++)
+            for (double i = 0; i < p1.Index; i++)
             {
                 if (p1 < p2)
                 {
@@ -51,7 +51,7 @@ namespace num3
         }
         public static bool operator ==(Poezd p1, Poezd p2)
         {
-            for (double i = 0; i < p1.Time; i++)
+            for (double i = 0; i < p1.Index; i++)
             {
                 if (p1 == p2)
                 {
@@ -64,7 +64,7 @@ namespace num3
         }
         public static bool operator !=(Poezd p1, Poezd p2)
         {
-            for (double i = 0; i < p1.Time; i++)
+            for (double i = 0; i < p1.Index; i++)
             {
                 if (p1 != p2)
                 {

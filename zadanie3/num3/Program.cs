@@ -19,7 +19,7 @@ namespace num3
             Console.WriteLine("2.Вывод всех поездов");
             Console.WriteLine("3.Поиск по времени");
             Console.WriteLine("4.Поиск по пункту назначения");
-            Console.WriteLine("5.Поиск по инлексу");
+            Console.WriteLine("5.Поиск по индексу");
 
             int k = int.Parse(Console.ReadLine());
             
@@ -30,6 +30,17 @@ namespace num3
                 {
                     case 1:
                         {
+                            Console.WriteLine("Введите индекс");
+                            v.Index = int.Parse(Console.ReadLine());
+
+                            Console.WriteLine("Введите пункт назначения");
+                            v.PunktNaz = Console.ReadLine();
+
+                            Console.WriteLine("Введите номер поезда");
+                            v.NumberP = Console.ReadLine();
+
+                            Console.WriteLine("Введите время");
+                            v.Time = Convert.ToDateTime(Console.ReadLine());
                             v.Add();
                             goto M1;
                         }
@@ -40,17 +51,24 @@ namespace num3
                         }
                     case 3:
                         {
-                            v.InfoTime();
+                            Console.Write("Введите время: ");
+                            DateTime time = Convert.ToDateTime(Console.ReadLine());
+                            v.InfoTime(time);
                             goto M1;
                         }
                     case 4:
                         {
-                            v.ShowEndPunct();
+                            Console.Write("Введите пункт назначения: ");
+                            string punkt = Console.ReadLine();
+                            v.ShowEndPunct(punkt);
                             goto M1;
                         }
                     case 5:
                         {
-                            v.ShowIndex();
+                            Console.Write("Введите индекс: ");
+                            int index = Convert.ToInt32(Console.ReadLine());
+                            v.ShowIndex(index);
+                            
                             goto M1;
                         }
                 }
