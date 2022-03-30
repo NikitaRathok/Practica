@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace num3
 {
-     class Vokzal:Poezd
+     class Vokzal
     {
         private Poezd [] poezda;
 
-        public Vokzal():base()
+        public Vokzal()
         {
             
-            int len = 0;
-            poezda = new Poezd[len];
+            
         }
         
 
@@ -29,10 +28,18 @@ namespace num3
                 
             }
         }
-        public void Add()
+        public void Add(Poezd poezd)
         {
-            Array.Resize(ref poezda, poezda.Length + 1);
-            poezda[poezda.Length - 1] = new Poezd(Index,PunktNaz, NumberP,Time );
+            if(poezda == null)
+            {
+                poezda = new Poezd[1];
+            }
+            else
+            {
+              Array.Resize(ref poezda, poezda.Length + 1);
+            }
+           
+            poezda[poezda.Length - 1] = poezd;
         }
         public Poezd[] InfoTime(DateTime time)
         {
@@ -46,7 +53,7 @@ namespace num3
         }
         public Poezd[] ShowIndex(int index)
         {
-            return poezda.Where(p => p.Index == Index).ToArray();
+            return poezda.Where(p => p.Index == index).ToArray();
         }
 
     }

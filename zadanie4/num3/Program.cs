@@ -8,20 +8,28 @@ namespace num3
 {
     internal class Program
     {
-        public static double MinMax(double x, double y)
+        public static void MinMax(ref double x,ref double y)
         {
-            if(x > y)
-            {
-                return x;
-            }
-            if(x < y)
+            var min = x < y ? x : y;
+            var max = x > y ? x : y;
+            x= min;
+            y= max;
+
+            
+        }
+        public static void Print( ref double x , ref double y)
+        {
+            Console.WriteLine(MinMax(ref x, ref y));
+            
         }
         static void Main(string[] args)
         {
-            int a = int.Parse(Console.ReadLine());
-            int b = int.Parse(Console.ReadLine());
+            double a = Double.Parse(Console.ReadLine());
+            double b = int.Parse(Console.ReadLine());
             int c = int.Parse(Console.ReadLine());
             int d = int.Parse(Console.ReadLine());
+
+            MinMax(ref a, ref b);
 
            
            
