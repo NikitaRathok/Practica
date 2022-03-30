@@ -51,29 +51,29 @@ namespace num3
                         }
                     case 2:
                         {
-                            v.Print();
+                            Info(v.GetAllPoezda());
                             break;
                         }
                     case 3:
                         {
                             Console.Write("Введите время: ");
                             DateTime time = Convert.ToDateTime(Console.ReadLine());
-                            v.InfoTime(time);
+                            Info(v.InfoTime(time));
                             break;
                         }
                     case 4:
                         {
                             Console.Write("Введите пункт назначения: ");
                             string punkt = Console.ReadLine();
-                            v.ShowEndPunct(punkt);
+                            Info(v.ShowEndPunct(punkt));
                             break;
                         }
                     case 5:
                         {
                             Console.Write("Введите индекс: ");
                             int index = Convert.ToInt32(Console.ReadLine());
-                            v.ShowIndex(index);
-
+                            
+                            Info(v.ShowIndex(index));
                             break;
                         }
                     case 6:
@@ -91,6 +91,13 @@ namespace num3
             
             
             
+        }
+        private static void Info(Poezd[] poezda)
+        {
+            foreach (var poezd in poezda)
+            {
+                Console.WriteLine(poezd.Info());
+            }
         }
     }
 } 

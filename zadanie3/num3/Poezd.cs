@@ -74,6 +74,13 @@ namespace num3
             }
             return true;
         }
+        public string Info()
+        {
+           return $"\nИндекс поезд: {Index}"+
+            $"\nПункт назначения: { PunktNaz}"+
+            $"\nномер поезда: {NumberP}"+
+            $"\nВремя отправления: {Time}";
+        }
 
 
     }

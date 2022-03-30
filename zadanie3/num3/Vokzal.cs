@@ -17,16 +17,9 @@ namespace num3
         }
         
 
-        public void Print()
+        public Poezd[] GetAllPoezda()
         {
-            for (int i = 0; i < poezda.Length; i++)
-            {
-                Console.WriteLine($"Индекс поезд: {poezda[i].Index}");
-                Console.WriteLine($"Пункт назначения: { poezda[i].PunktNaz}");
-                Console.WriteLine($"номер поезда: {poezda[i].NumberP}" );
-                Console.WriteLine($"Время отправления: {poezda[i].Time}");
-                
-            }
+            return poezda;
         }
         public void Add(Poezd poezd)
         {

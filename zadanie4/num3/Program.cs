@@ -19,8 +19,7 @@ namespace num3
         }
         public static void Print( ref double x , ref double y)
         {
-            Console.WriteLine(MinMax(ref x, ref y));
-            
+            Console.WriteLine(MinMax(ref x,ref y));
         }
         static void Main(string[] args)
         {
