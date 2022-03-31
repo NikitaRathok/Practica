@@ -48,7 +48,6 @@ namespace num1
             {
                 Console.WriteLine(ex.Message);
             }
-           
         }
     }
 }

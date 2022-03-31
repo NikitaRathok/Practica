@@ -13,30 +13,33 @@ namespace num3
             var min = x < y ? x : y;
             var max = x > y ? x : y;
             x= min;
-            y= max;
-
-            
+            y= max; 
         }
-        public static void Print( ref double x , ref double y)
-        {
-            Console.WriteLine(MinMax(ref x,ref y));
-        }
+        
+       
         static void Main(string[] args)
         {
-            double a = Double.Parse(Console.ReadLine());
-            double b = int.Parse(Console.ReadLine());
-            int c = int.Parse(Console.ReadLine());
-            int d = int.Parse(Console.ReadLine());
+            try
+            {
+                Console.WriteLine("Enter A");
+                double a = Double.Parse(Console.ReadLine());
+                Console.WriteLine("Enter B");
+                double b = Double.Parse(Console.ReadLine());
+                Console.WriteLine("Enter C");
+                double c = Double.Parse(Console.ReadLine());
+                Console.WriteLine("Enter D");
+                double d = Double.Parse(Console.ReadLine());
 
-            MinMax(ref a, ref b);
-
-           
-           
-
-
-           
-
-
+                MinMax(ref a, ref b);
+                MinMax(ref c, ref d);
+                MinMax(ref a, ref c);
+                MinMax(ref b, ref d);
+                Console.WriteLine($"Min {a}, Max {d}");
+            }
+            catch(FormatException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
