@@ -18,11 +18,11 @@ namespace num5
         static double Calculation(double n)
         {
             double f = 0;
-            return f = 1 / Factorial(n - 3);
+            return f = 1 / Factorial(n + 3);
         }
         static void Main(string[] args)
         {
-          Console.WriteLine("Введите число n >3");
+          Console.WriteLine("Введите число n ");
           double n = double.Parse(Console.ReadLine());
           Console.WriteLine(Calculation(n));
         }
