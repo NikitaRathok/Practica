@@ -10,11 +10,14 @@ namespace num1
     {
         static void Main(string[] args)
         {
-            string text = Console.ReadLine();
-            string textUpper = text.ToUpper();
-            if(textUpper == text)
+            string s = Console.ReadLine();
+            string[] sSplit = s.Split(' ');
+            foreach (var item in sSplit)
             {
-                Console.WriteLine(text);
+                if(item[0] == item.ToUpper()[0])
+                {
+                    Console.WriteLine(item);
+                }
             }
         }
     }

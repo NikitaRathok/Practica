@@ -44,12 +44,7 @@ namespace num2
             int  s = 0;
             
             var lastIndexOfMin = Array.LastIndexOf(mas, mas.Min());
-            Console.WriteLine(lastIndexOfMin);
             var lastIndexOfMax = Array.LastIndexOf(mas, mas.Max()); 
-
-            Console.WriteLine(lastIndexOfMin);
-            Console.WriteLine(lastIndexOfMax);
-            
             for(int i = lastIndexOfMin;i <= lastIndexOfMax;i++)
             {
                 MinMax(lastIndexOfMin, lastIndexOfMax);
@@ -59,6 +54,7 @@ namespace num2
 
             int rez = s / h;
             Console.WriteLine("Результа = " + rez);
+            Console.WriteLine("Сортированыый массив");
             Sort(mas);
             Console.WriteLine(Array.BinarySearch(mas,k));
         }

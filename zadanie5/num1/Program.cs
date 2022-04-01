@@ -35,7 +35,7 @@ namespace num1
                 }
                 
             }
-            Console.WriteLine("kolvo" + k);
+            Console.WriteLine("колличество " + k);
         }
     }
 }

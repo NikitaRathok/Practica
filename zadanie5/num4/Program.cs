@@ -44,8 +44,10 @@ namespace num4
                 }
                 Console.WriteLine();
             }
-           
+
+            Console.Write("На 3 этаже:");
             GetAllHumansInThreeFloor(home, s);
+            Console.Write("На 5 этаже:");
             GetAllHumansIfFiveFloor(home, s1);
 
             if(s1>s)
