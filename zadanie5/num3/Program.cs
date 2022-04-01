@@ -8,9 +8,9 @@ namespace num3
 {
     internal class Program
     {
-        public static void RandomMas(int [,] mas,int a ,int b,int n)
+        public static int[,] RandomMas(int countStart = 1,int countFinish=10,int a=1 ,int b=10,int n=10)
         {
-
+            int[,] mas = new int[countStart, countFinish];
             Random rnd = new Random();
             for (int i = 0; i < n; i++)
             {
@@ -19,6 +19,7 @@ namespace num3
                     mas[i, j] = rnd.Next(a, b);
                 }
             }
+            return mas;
         }
         public static void PrintMas(int[,] mas,  int n)
         {
@@ -63,7 +64,7 @@ namespace num3
         {
             Console.WriteLine("Введите размерность массива");
             int n = int.Parse(Console.ReadLine());
-            int[,] mas = new int[n, n];
+            int[,] mas = RandomMas();
             Console.WriteLine("Введите а");
             int a = int.Parse(Console.ReadLine());
             Console.WriteLine("Введите b");
@@ -73,7 +74,6 @@ namespace num3
             Console.WriteLine("Введите l");
             int l = int.Parse(Console.ReadLine());
             var s = 0;
-            RandomMas(mas, a, b, n);
             PrintMas(mas, n);
             var maxItem = SearchMaxItemInColums(mas, k);
             Console.WriteLine($"max = {maxItem}");

@@ -8,20 +8,23 @@ namespace num2
 {
     internal class Program
     {
-        public static void RandomMas(int [] mas)
+        public static int[] RandomMas(int count=10,int startValue=1,int endValue=100)
         {
+            int[] mas = new int[count];
             Random rnd = new Random();
             for (int i = 0; i < mas.Length; i++)
             {
-                mas[i] = rnd.Next(100);
+                mas[i] = rnd.Next(startValue,endValue);
             }
+            return mas;
         }
-        public static void MinMax( int lastIndexOfMin,  int lastIndexOfMax)
+        public static (int,int) MinMax( int lastIndexOfMin,  int lastIndexOfMax)
         {
             var min = lastIndexOfMin < lastIndexOfMax ? lastIndexOfMin : lastIndexOfMax;
             var max = lastIndexOfMin > lastIndexOfMax ? lastIndexOfMin : lastIndexOfMax;
             lastIndexOfMin = min;
             lastIndexOfMax = max;
+            return (lastIndexOfMax, lastIndexOfMin);
         }
         public static void Sort(int [] mas)
         {
@@ -37,17 +40,18 @@ namespace num2
         {
             Console.WriteLine("Введите число k");
             int k = int.Parse(Console.ReadLine());
+
+            int[] mas = RandomMas();
             
-            int[] mas = new int[100];
-            RandomMas(mas);
             int h = 1;
             int  s = 0;
             
             var lastIndexOfMin = Array.LastIndexOf(mas, mas.Min());
-            var lastIndexOfMax = Array.LastIndexOf(mas, mas.Max()); 
-            for(int i = lastIndexOfMin;i <= lastIndexOfMax;i++)
+            var lastIndexOfMax = Array.LastIndexOf(mas, mas.Max());
+            var (m,m1) = MinMax(lastIndexOfMin, lastIndexOfMax);
+            for (int i = m;i <= m1;i++)
             {
-                MinMax(lastIndexOfMin, lastIndexOfMax);
+                
                 s += mas[i];
                 h++;
             }

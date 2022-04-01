@@ -21,8 +21,7 @@ namespace num2
                     if (letter[i] == letter[i + 1])
                     {
                         Console.WriteLine(letter);
-                    }
-                        
+                    }   
                 }    
             }
         }
