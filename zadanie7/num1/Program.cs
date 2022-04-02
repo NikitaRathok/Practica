@@ -13,7 +13,7 @@ namespace num1
         {
             string text = Console.ReadLine();
             
-            string pattern = @"[+]?d{1}[- ]?\d{3}[- ]?\d{3}[- ]?\d{2}[- ]?\d{2}";
+            string pattern = @"[+]?\d{1}[- ]?\d{3}[- ]?\d{3}[- ]?\d{2}[- ]?\d{2}";
             Regex r = new Regex(pattern);
 
             MatchCollection mc = r.Matches(text);
