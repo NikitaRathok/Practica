@@ -4,16 +4,16 @@ namespace num2
 {
 
 
-    public class FloatMatrix : IComparable
+    public class FloatMatrix:IComparable
     {
         public double[,] matrix;
-        int rows => matrix.GetLength(0);
+        int rows =>matrix.GetLength(0);
         int colums => matrix.GetLength(1);
         int Length => matrix.Length;
 
-        public static bool operator ==(FloatMatrix current, FloatMatrix matrix)
+        public static bool operator ==(FloatMatrix current, FloatMatrix m)
         {
-            if (current.rows != matrix.rows || current.colums != matrix.colums)
+            if (current?.rows != m?.rows || current?.colums != m?.colums)
             {
                 return false;
             }
@@ -21,7 +21,7 @@ namespace num2
             {
                 for (int j = 0; j < current.colums; j++)
                 {
-                    if (current[i, j] != matrix[i, j])
+                    if (current[i, j] != m[i, j])
                     {
                         return false;
                     }
@@ -31,7 +31,7 @@ namespace num2
         }
         public static bool operator !=(FloatMatrix current, FloatMatrix matrix)
         {
-            if (current.rows != matrix.rows || current.colums != matrix.colums)
+            if (current?.rows != matrix?.rows || current?.colums != matrix?.colums)
             {
                 return true;
             }
@@ -50,7 +50,12 @@ namespace num2
 
         public FloatMatrix(int rows, int colums)
         {
+            
             matrix = new double[rows, colums];
+
+        }
+        public FloatMatrix()
+        {
 
         }
         public double this[int index1, int index2]
@@ -58,26 +63,7 @@ namespace num2
             get { return matrix[index1, index2]; }
             set { matrix[index1, index2] = value; }
         }
-        public void Swap()
-        {
-            for (int i = 0; i < rows; i++)
-            {
-                for (int j = 0; j < colums; j++)
-                {
-                    if (matrix[i, j] != 0)
-                    {
-                        matrix[i, j] = -matrix[i, j];
-
-                    }
-                    else if (matrix[i, j] == 0)
-                    {
-                        matrix[i, j] = 1;
-                    }
-                    Console.Write(matrix[i, j]);
-                }
-                Console.WriteLine();
-            }
-        }
+       
         public void CreatMat()
         {
 
@@ -135,9 +121,9 @@ namespace num2
         {
             if (colums == rows)
             {
-                for (int i = 0; i < matrix.GetLength(0); ++i)
+                for (int i = 0; i < rows; ++i)
                 {
-                    for (int j = 0; j < matrix.GetLength(1); ++j)
+                    for (int j = 0; j < colums; ++j)
                         if (matrix[i, j] != matrix[j, i])
                         {
                             a = false;
