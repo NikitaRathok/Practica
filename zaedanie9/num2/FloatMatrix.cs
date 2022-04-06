@@ -64,30 +64,8 @@ namespace num2
             set { matrix[index1, index2] = value; }
         }
        
-        public void CreatMat()
-        {
-
-            for (int i = 0; i < rows; i++)
-            {
-                for (int j = 0; j < colums; j++)
-                {
-                    Console.Write("Введите элемент [{0},{1}] : ", i, j);
-                    matrix[i, j] = double.Parse(Console.ReadLine());
-                }
-            }
-        }
-        public void Print()
-        {
-            Console.WriteLine("Матрица :");
-            for (int i = 0; i < rows; i++)
-            {
-                for (int j = 0; j < colums; j++)
-                {
-                    Console.Write(matrix[i, j]);
-                }
-                Console.WriteLine();
-            }
-        }
+        
+        
 
         public int CompareTo(object obj)
         {
@@ -117,37 +95,45 @@ namespace num2
             { Console.WriteLine("Матрица нулевая"); }
             else { Console.WriteLine("Матрица не нулевая"); }
         }
-        public bool SymmetricalMatrix(bool a) 
+        public bool IsSymmetricalMatrix() 
         {
-            if (colums == rows)
+            if (colums != rows)
+            {
+                return false;
+                
+            }
+            else
             {
                 for (int i = 0; i < rows; ++i)
                 {
                     for (int j = 0; j < colums; ++j)
                         if (matrix[i, j] != matrix[j, i])
                         {
-                            a = false;
-                            break;
+                            return false;
+
                         }
-                    if (!a) break;
                 }
-                return a;
+            }
+            return true;
+        }
+
+        public bool IsSquareMatrix() 
+        {
+            if (rows == colums)
+            {
+                return true;
             }
             else return false;
         }
-
-        public void SquareMatrix() 
+        public bool IsSingleMatrix() 
         {
-            if (rows == colums)
+            if (rows != colums)
             {
-                Console.WriteLine("Матрица квадратная");
+            return false;
             }
-            else Console.WriteLine("Матрица не квадратная");
-        }
-        public bool SingleMatrix() 
-        {
-            if (rows == colums)
+            else
             {
+
                 for (int i = 0; i < rows; i++)
                 {
                     for (int j = 0; j < colums; j++)
@@ -162,11 +148,14 @@ namespace num2
                 }
                 return true;
             }
-            return false;
         }
-        public bool Diagonal(bool t) 
+        public bool IsDiagonal() 
         {
-            if (rows == colums)
+            if (rows != colums)
+            {
+                return false;
+            }
+            else
             {
                 for (int i = 0; i < rows; i++)
                 {
@@ -176,20 +165,26 @@ namespace num2
                         {
                             if (matrix[i, j] == 0)
                             {
-                                t = true;
+                                return true;
                             }
-                            else t = false;
-                            break;
+                            else return false;
+
                         }
                     }
                 }
             }
-            return t;
+            return true;
+            
         }
 
-        public bool UpperTreangle()
+        public bool IsUpperTreangle()
         {
-            if (rows == colums)
+            if (rows != colums)
+            {
+            return false;
+                
+            }
+            else
             {
                 for (int i = 0; i < rows; i++)
                 {
@@ -203,11 +198,16 @@ namespace num2
                 }
                 return true;
             }
-            return false;
+            
         }
-        public bool LowerTreangle()
+        public bool IsLowerTreangle()
         {
-            if (rows == colums)
+            if (rows != colums)
+            {
+                
+            return false;
+            }
+            else
             {
                 for (int i = 0; i < rows; i++)
                 {
@@ -221,7 +221,7 @@ namespace num2
                 }
                 return true;
             }
-            return false;
+           
         }
     }
 }
