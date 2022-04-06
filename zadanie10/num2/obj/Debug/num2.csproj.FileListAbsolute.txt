@@ -5,3 +5,4 @@ C:\TRASH\Практика c#\Practica\zadanie10\num2\obj\Debug\num2.csproj.Sugge
 C:\TRASH\Практика c#\Practica\zadanie10\num2\obj\Debug\num2.csproj.CoreCompileInputs.cache
 C:\TRASH\Практика c#\Practica\zadanie10\num2\obj\Debug\num2.exe
 C:\TRASH\Практика c#\Practica\zadanie10\num2\obj\Debug\num2.pdb
+C:\TRASH\Практика c#\Practica\zadanie10\num2\obj\Debug\num2.csproj.AssemblyReference.cache
