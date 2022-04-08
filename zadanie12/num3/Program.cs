@@ -23,10 +23,10 @@ namespace num3
             Console.WriteLine($"Смена регистра букв на прописные {s}") ;
             return s;
         }
-        public static string GlueString(string s)
+        public static string DelletWordString(string s)
         {
             s = s.Substring(2);
-           Console.WriteLine($"Склеянные строки {s}");
+           Console.WriteLine($"Удаление части строки {s}");
            return s;
         }
         static void Main(string[] args)
@@ -37,7 +37,7 @@ namespace num3
             StringOperation so = new StringOperation(CroppingLastSymdol);
 
             so += UpperString;
-            so += GlueString;
+            so += DelletWordString;
             so(s);
         }
     }
