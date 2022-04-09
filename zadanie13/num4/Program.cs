@@ -6,41 +6,8 @@ using System.Threading.Tasks;
 
 namespace num4
 {
-    internal class Program
+    internal partial class Program
     {
-        class MyInfo
-        {
-            string name = "Никита";
-            public delegate void Info(string name);
-            public event Info Changed;
-            public void OnChanged(string n)
-            {
-                if (name != n)
-                {
-                    Changed(n);
-                    name = n;
-                }
-            }
-        }
-        class Famaly
-        {
-            public void Message(string message)
-            {
-                Console.WriteLine($" {message}  не мой сын");
-            }
-            public void SomeMessage(string message)
-            {
-                Console.WriteLine($"{message} возможно имя изменено");
-            }
-        }
-        class Friends
-        {
-            public void Message(string message)
-            {
-                Console.WriteLine($" {message}  не наш друг");
-            }
-        }
-
         static void Main(string[] args)
         {
             MyInfo inf = new MyInfo();
