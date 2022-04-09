@@ -1,0 +1,8 @@
+C:\TRASH\Практика c#\Practica\zadanie13\num4\bin\Debug\num4.exe.config
+C:\TRASH\Практика c#\Practica\zadanie13\num4\bin\Debug\num4.exe
+C:\TRASH\Практика c#\Practica\zadanie13\num4\bin\Debug\num4.pdb
+C:\TRASH\Практика c#\Practica\zadanie13\num4\obj\Debug\num4.csproj.AssemblyReference.cache
+C:\TRASH\Практика c#\Practica\zadanie13\num4\obj\Debug\num4.csproj.SuggestedBindingRedirects.cache
+C:\TRASH\Практика c#\Practica\zadanie13\num4\obj\Debug\num4.csproj.CoreCompileInputs.cache
+C:\TRASH\Практика c#\Practica\zadanie13\num4\obj\Debug\num4.exe
+C:\TRASH\Практика c#\Practica\zadanie13\num4\obj\Debug\num4.pdb
