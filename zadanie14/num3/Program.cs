@@ -56,13 +56,6 @@ namespace num3
             t.Start();
             t.Join();
             t1.Start();
-            
-           
-           
-            
-            
-
-
         }
     }
 }

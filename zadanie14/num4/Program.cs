@@ -58,7 +58,6 @@ namespace num4
                 thead[i].Start();
                 thead[i].Join();
             }
-           
         }
     }
 }

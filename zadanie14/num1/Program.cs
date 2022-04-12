@@ -53,16 +53,6 @@ namespace num1
             t1.Start();
             t.Join(100);
             t2.Start();
-            
-           
-           
-            
-
-
-
-
         }
-
-
     }
 }
