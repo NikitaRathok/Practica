@@ -1,0 +1,6 @@
+C:\TRASH\Практика c#\Practica\zadanie17\TestLib\bin\Debug\TestLib.dll
+C:\TRASH\Практика c#\Practica\zadanie17\TestLib\bin\Debug\TestLib.pdb
+C:\TRASH\Практика c#\Practica\zadanie17\TestLib\obj\Debug\Figurelib.csproj.AssemblyReference.cache
+C:\TRASH\Практика c#\Practica\zadanie17\TestLib\obj\Debug\Figurelib.csproj.CoreCompileInputs.cache
+C:\TRASH\Практика c#\Practica\zadanie17\TestLib\obj\Debug\TestLib.dll
+C:\TRASH\Практика c#\Practica\zadanie17\TestLib\obj\Debug\TestLib.pdb
