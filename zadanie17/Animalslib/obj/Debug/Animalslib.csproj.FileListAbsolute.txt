@@ -1,0 +1,5 @@
+C:\TRASH\Практика c#\Practica\zadanie17\Animalslib\bin\Debug\Animalslib.dll
+C:\TRASH\Практика c#\Practica\zadanie17\Animalslib\bin\Debug\Animalslib.pdb
+C:\TRASH\Практика c#\Practica\zadanie17\Animalslib\obj\Debug\Animalslib.csproj.CoreCompileInputs.cache
+C:\TRASH\Практика c#\Practica\zadanie17\Animalslib\obj\Debug\Animalslib.dll
+C:\TRASH\Практика c#\Practica\zadanie17\Animalslib\obj\Debug\Animalslib.pdb

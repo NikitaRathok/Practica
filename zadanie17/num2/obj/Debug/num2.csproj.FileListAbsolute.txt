@@ -1,0 +1,11 @@
+C:\TRASH\Практика c#\Practica\zadanie17\num2\obj\Debug\num2.csproj.AssemblyReference.cache
+C:\TRASH\Практика c#\Practica\zadanie17\num2\obj\Debug\num2.csproj.SuggestedBindingRedirects.cache
+C:\TRASH\Практика c#\Practica\zadanie17\num2\obj\Debug\num2.csproj.CoreCompileInputs.cache
+C:\TRASH\Практика c#\Practica\zadanie17\num2\bin\Debug\num2.exe.config
+C:\TRASH\Практика c#\Practica\zadanie17\num2\bin\Debug\num2.exe
+C:\TRASH\Практика c#\Practica\zadanie17\num2\bin\Debug\num2.pdb
+C:\TRASH\Практика c#\Practica\zadanie17\num2\obj\Debug\num2.csproj.CopyComplete
+C:\TRASH\Практика c#\Practica\zadanie17\num2\obj\Debug\num2.exe
+C:\TRASH\Практика c#\Practica\zadanie17\num2\obj\Debug\num2.pdb
+C:\TRASH\Практика c#\Practica\zadanie17\num2\bin\Debug\Animalslib.pdb
+C:\TRASH\Практика c#\Practica\zadanie17\num2\bin\Debug\Animalslib.dll

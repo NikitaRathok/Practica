@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "0bfa76b4-8293-432e-8c5a-4321085d03a7": {
+      "ProjectGuid": "0bfa76b4-8293-432e-8c5a-4321085d03a7",
+      "DisplayName": "num1",
+      "ColorIndex": 0
+    },
+    "89e09dc7-76f7-43d2-9f0e-67b099aa65a3": {
+      "ProjectGuid": "89e09dc7-76f7-43d2-9f0e-67b099aa65a3",
+      "DisplayName": "FigurLib",
+      "ColorIndex": 1
+    },
+    "cdb8bb00-112c-4ada-a97d-f3bf860f295f": {
+      "ProjectGuid": "cdb8bb00-112c-4ada-a97d-f3bf860f295f",
+      "DisplayName": "Figurelib",
+      "ColorIndex": 2
+    },
+    "7b9bd612-8efe-4b31-99b8-98f054ac6ed7": {
+      "ProjectGuid": "7b9bd612-8efe-4b31-99b8-98f054ac6ed7",
+      "DisplayName": "num2",
+      "ColorIndex": 3
+    },
+    "3a63e5e0-5685-4a2b-9149-2aa01f11d788": {
+      "ProjectGuid": "3a63e5e0-5685-4a2b-9149-2aa01f11d788",
+      "DisplayName": "Animalslib",
+      "ColorIndex": 4
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "cd037e44-9223-4486-892b-5bf62e7e3252": {
+      "ProjectGuid": "cd037e44-9223-4486-892b-5bf62e7e3252",
+      "DisplayName": "Animalslib",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}
