@@ -27,8 +27,6 @@ namespace num1
 
             var stroka = new string(st.Reverse().ToArray());
             Console.WriteLine(stroka);
-
-
         }
     }
 }

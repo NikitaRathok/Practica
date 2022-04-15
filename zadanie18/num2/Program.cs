@@ -11,40 +11,37 @@ namespace num2
     {
         static void Main(string[] args)
         {
-            
-            
-
             StreamReader st = new StreamReader("1.txt");
 
             Queue<string> q1 = new Queue<string>();
             Queue<string> q2 = new Queue<string>();
             Queue<int> q3 = new Queue<int>();
             string f = st.ReadToEnd();
-            
+
             string notNumbers = " ";
             string numbers = " ";
-            
-                foreach(var i in f)
+
+            foreach (var i in f)
+            {
+                if (!char.IsDigit(i))
                 {
-                   if(!char.IsDigit(i))
-                    {
-                        notNumbers += i;
-                        
-                    }
-                   else
-                    {
-                        numbers += i;
-                        
-                    }
-                   
+                    notNumbers += i;
+
                 }
+                else
+                {
+                    numbers += i;
+
+                }
+
+            }
 
             q1.Enqueue(notNumbers);
             q2.Enqueue(numbers);
-            
-            Console.WriteLine(String.Join(" ",q1));
-            Console.WriteLine(String.Join(" ",q2));
-            
+
+            Console.WriteLine(String.Join(" ", q1));
+            Console.WriteLine(String.Join(" ", q2));
+
         }
     }
 }
