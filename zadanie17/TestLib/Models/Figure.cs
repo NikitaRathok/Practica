@@ -8,7 +8,7 @@ namespace Figurelib
 
         }
 
-        public virtual int Perim(int p)
+        public virtual double Perim(double p)
         {
             return p;
         }

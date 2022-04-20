@@ -3,10 +3,10 @@ namespace Figurelib
 {
    public class Rectangle : Figure
     {
-        public int a;
-        public int b;
+        public double a;
+        public double b;
 
-        public Rectangle(int a, int b) : base()
+        public Rectangle(double a, double b) : base()
         {
             this.a = a;
             this.b = b;
@@ -16,7 +16,7 @@ namespace Figurelib
             a = int.Parse(Console.ReadLine());
             b = int.Parse(Console.ReadLine());
         }
-        public override int Perim(int p)
+        public override double Perim(double p)
         {
             p = (a + b) * 2;
             return p;

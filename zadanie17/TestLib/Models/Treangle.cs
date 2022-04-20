@@ -3,11 +3,11 @@ namespace Figurelib
 {
     public class Treangle : Figure
     {
-        public int a;
-        public int b;
-        public int c;
+        public double a;
+        public double b;
+        public double c;
 
-        public Treangle(int a, int b, int c) : base()
+        public Treangle(double a, double b, double c) : base()
         {
             this.a = a;
             this.b = b;
@@ -30,14 +30,14 @@ namespace Figurelib
                 return true;
             }
         }
-        public override int Perim(int p)
+        public override double Perim(double p)
         {
             p = a + b + c;
             return p;
         }
         public override double S(double s)
         {
-            s = 1 / 2 * a * b;
+            s = 0.5 * a * b;
             return s;
         }
         public void TypeOfTreangle()

@@ -13,11 +13,11 @@ namespace num1
     {
         static void Main(string[] args)
         {
-            int a = 0;
-            int b = 0;
-            int c = 0;
-            int p = 0;
-            int s = 0;
+            double a = 0;
+            double b = 0;
+            double c = 0;
+            double p = 0;
+            double s = 0;
             Treangle t = new Treangle(a, b, c);
 
             t.EnterSite();
