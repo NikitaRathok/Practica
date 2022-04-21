@@ -34,7 +34,8 @@ namespace num1
             textBox4.Text += Environment.NewLine + "Y = " + y.ToString();
             textBox4.Text += Environment.NewLine + "Z = " + z.ToString();
 
-            double c = Math.Pow(2, Math.Pow(y, x)) + Math.Pow(3, Math.Pow(x, y)) - (y * (Math.Atan(z) - (Math.PI/6)))/(Math.Abs(x)+ (1/Math.Pow(y,2)+1));
+            double c = Math.Pow(2, Math.Pow(y, x)) + Math.Pow(3, Math.Pow(x, y)) - (y * (Math.Atan(z) - 
+                (Math.PI/6)))/(Math.Abs(x)+ (1/Math.Pow(y,2)+1));
 
             textBox4.Text += Environment.NewLine + "C = " + c.ToString();
         }
