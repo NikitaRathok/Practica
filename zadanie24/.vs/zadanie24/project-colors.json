@@ -1,0 +1,61 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "65ae583a-1084-4212-aee4-dadf9f6e33ae": {
+      "ProjectGuid": "65ae583a-1084-4212-aee4-dadf9f6e33ae",
+      "DisplayName": "num1",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    },
+    "d67f55ef-9396-4d09-bf6b-9cb4c1d0bbfb": {
+      "ProjectGuid": "d67f55ef-9396-4d09-bf6b-9cb4c1d0bbfb",
+      "DisplayName": "num1.2",
+      "ColorIndex": 1
+    },
+    "83aa2a5c-ec18-4952-98c3-f41d076e6443": {
+      "ProjectGuid": "83aa2a5c-ec18-4952-98c3-f41d076e6443",
+      "DisplayName": "num2",
+      "ColorIndex": 2
+    },
+    "eb3523a6-5a8b-41ad-8e5a-68f5a57fecdf": {
+      "ProjectGuid": "eb3523a6-5a8b-41ad-8e5a-68f5a57fecdf",
+      "DisplayName": "num2",
+      "ColorIndex": 3
+    },
+    "95fd59d4-1662-4665-a7d2-ec368aa16195": {
+      "ProjectGuid": "95fd59d4-1662-4665-a7d2-ec368aa16195",
+      "DisplayName": "WindowsFormsControlLibrary1",
+      "ColorIndex": 4
+    },
+    "c7e33ed5-738e-45bf-a063-279b1709151b": {
+      "ProjectGuid": "c7e33ed5-738e-45bf-a063-279b1709151b",
+      "DisplayName": "num2.2",
+      "ColorIndex": 5
+    },
+    "40095ddb-c5e7-4e26-9b91-7291131cf09d": {
+      "ProjectGuid": "40095ddb-c5e7-4e26-9b91-7291131cf09d",
+      "DisplayName": "num2.3",
+      "ColorIndex": 6
+    },
+    "1b5f79ff-8402-4036-9ee8-e7d10788329d": {
+      "ProjectGuid": "1b5f79ff-8402-4036-9ee8-e7d10788329d",
+      "DisplayName": "num2.4",
+      "ColorIndex": 7
+    },
+    "d9d3dc73-1645-4ba4-8d1c-dfd31b344aa1": {
+      "ProjectGuid": "d9d3dc73-1645-4ba4-8d1c-dfd31b344aa1",
+      "DisplayName": "num3",
+      "ColorIndex": 8
+    },
+    "f4135706-efdb-4596-a8fa-2a9552ec325b": {
+      "ProjectGuid": "f4135706-efdb-4596-a8fa-2a9552ec325b",
+      "DisplayName": "num4",
+      "ColorIndex": 9
+    }
+  },
+  "NextColorIndex": 10
+}

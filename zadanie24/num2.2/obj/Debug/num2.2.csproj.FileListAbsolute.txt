@@ -1,0 +1,11 @@
+C:\TRASH\Практика c#\Practica\zadanie24\num2.2\bin\Debug\num2.2.exe.config
+C:\TRASH\Практика c#\Practica\zadanie24\num2.2\bin\Debug\num2.2.exe
+C:\TRASH\Практика c#\Practica\zadanie24\num2.2\bin\Debug\num2.2.pdb
+C:\TRASH\Практика c#\Practica\zadanie24\num2.2\obj\Debug\num2.2.csproj.SuggestedBindingRedirects.cache
+C:\TRASH\Практика c#\Practica\zadanie24\num2.2\obj\Debug\num2._2.Properties.Resources.resources
+C:\TRASH\Практика c#\Practica\zadanie24\num2.2\obj\Debug\num2._2.UserControlTimer2.resources
+C:\TRASH\Практика c#\Practica\zadanie24\num2.2\obj\Debug\num2.2.csproj.GenerateResource.cache
+C:\TRASH\Практика c#\Practica\zadanie24\num2.2\obj\Debug\num2.2.csproj.CoreCompileInputs.cache
+C:\TRASH\Практика c#\Practica\zadanie24\num2.2\obj\Debug\num2.2.exe
+C:\TRASH\Практика c#\Practica\zadanie24\num2.2\obj\Debug\num2.2.pdb
+C:\TRASH\Практика c#\Practica\zadanie24\num2.2\obj\Debug\num2._2.Form1.resources
