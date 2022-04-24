@@ -1,0 +1,17 @@
+﻿<Window x:Class="num4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:num4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+   
+    <Grid Margin="0,-5,-45,-21">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button x:Name="btnDell" Content="Button" Width="200" Height="60" Margin="300,154,300,220" Click="BtnDell_Click" Grid.Row="0"/>
+
+    </Grid>
+</Window>
