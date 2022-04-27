@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,45 +21,39 @@ namespace num4
     /// </summary>
     public partial class MainWindow : Window
     {
+        public ObservableCollection<ButtonViewModel> Buttons { get; set; } = new ObservableCollection<ButtonViewModel>();
         public MainWindow()
         {
             InitializeComponent();
-            btnDell.Click += BtnDell_Click;
-            btnDell.MouseMove += BtnDell_MouseMove;
+            DataContext = this;
         }
 
-        private void BtnDell_MouseMove(object sender, MouseEventArgs e)
+        public class ButtonViewModel
         {
-           
+            public string Content { get; set; }
+            public int Row { get; set; }
+            public int Column { get; set; }
+
+            public ICommand Command { get; set; }
+
+            public ButtonViewModel(string content, int row = 0, int column = 0, ICommand command = null)
+            {
+                Content = content;
+                Row = row;
+                Column = column;
+                Command = command;
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            button.Visibility = Visibility.Collapsed;
+        }
+
+        private void btn(object sender, MouseEventArgs e)
+        {
             Random rand = new Random();
-            Button b = (Button)sender;
-            Button b1 = (Button)sender;
-            b.MouseMove += B_MouseMove;
-            int x2 = rand.Next(100,500);
-            int y2 = rand.Next(100, 500);
-            
-            b.Margin = new Thickness(x2,y2,x2,y2);
-
-
-
+            Buttons.Add(new ButtonViewModel($"кнопка {rand.Next(1, 3)}", rand.Next(1, 3), rand.Next(1, 3)));
         }
-
-        private void B_MouseMove(object sender, MouseEventArgs e)
-        {
-            Button b = (Button)sender;
-            Random rand = new Random();
-            int x2 = rand.Next(100, 500);
-            int y2 = rand.Next(100, 500);
-
-            b.Margin = new Thickness(x2, y2, x2, y2);
-        }
-
-        private void BtnDell_Click(object sender, RoutedEventArgs e)
-        {
-            btnDell.Visibility = Visibility.Hidden;
-           
-        }
-
-        
     }
 }

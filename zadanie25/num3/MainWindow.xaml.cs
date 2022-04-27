@@ -24,7 +24,7 @@ namespace num3
 
 
             Series series1 = new Series();
-            Series series2 = new Series();
+           
 
             double Xmin = double.Parse(textBox1.Text);
             double Xmax = double.Parse(textBox2.Text);
@@ -36,7 +36,7 @@ namespace num3
             double[] x = new double[count];
            
             double[] y1 = new double[count];
-            double[] y2 = new double[count];
+            
            
             for (int i = 0; i < count; i++)
             {
@@ -46,7 +46,7 @@ namespace num3
                 y1[i] = -x[i];
 
             }
-           
+            myChart.Series.Add(series1);
             myChart.ChartAreas[0].AxisX.Minimum = Xmin;
             myChart.ChartAreas[0].AxisX.Maximum = Xmax;
           
