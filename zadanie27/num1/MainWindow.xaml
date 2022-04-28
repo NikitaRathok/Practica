@@ -1,0 +1,35 @@
+﻿<Window x:Class="num1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:num1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="379*"/>
+            <RowDefinition Height="55*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="buttonAdd" Content="Добавить" Margin="19,357,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="530" Height="54" Grid.RowSpan="2" Click="buttonAdd_Click"/>
+        <Button x:Name="buttonOpen" Content="Открыть" Margin="0,0,24,319" Click="ButtonOpen_Click" VerticalAlignment="Bottom" HorizontalAlignment="Right" Height="39" Width="160"/>
+        <Expander Header="Expander" Margin="641,151,57,109">
+            <Grid Background="#FFE5E5E5" Margin="0,13,0,-33">
+                <RadioButton Content="TextBlock" Margin="3,4,-3,8" Checked="TextBlock_Checked_1"/>
+                <RadioButton Content="TreeView" Margin="4,35,-4,-3" Checked="TreeView_Checked"/>
+                <RadioButton Content="ListBox" Margin="2,73,-2,-7" Checked="ListBox_Checked"/>
+                <TreeView Margin="-606,-128,203,-3"/>
+            </Grid>
+        </Expander>
+        <Button x:Name="buttonClose" Content="Выйти" Margin="609,0,31,25" Click="ButtonClose_Click" VerticalAlignment="Bottom" Height="39" Grid.RowSpan="2"/>
+        <TextBox x:Name="textBox2" TextWrapping="Wrap" Text="TextBox" Margin="58,17,485,327"/>
+        <ScrollViewer Margin="18,78,211,37">
+            <TextBlock x:Name="textBlock1" TextWrapping="Wrap" Text="TextBlock" Margin="25,87,252,82"/>
+        </ScrollViewer>
+        <ScrollViewer Margin="18,101,236,44">
+            <ListBox x:Name="listbox1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="25,16,31,40" Height="200" Width="486"/>
+        </ScrollViewer>
+        <TreeView x:Name="treeView1" Margin="44,83,233,44"/>
+
+    </Grid>
+</Window>
