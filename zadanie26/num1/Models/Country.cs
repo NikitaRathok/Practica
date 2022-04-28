@@ -15,10 +15,10 @@ namespace num1.Models
         public override string ToString()
         {
             return new StringBuilder()
-                 .AppendLine($"--->Страна ---{Name}")
-                 .AppendLine($"\tПлощадь ---{Area}km2")
-                 .AppendLine($"\tНаселение ---{Population}millions people")
-                 .ToString();
+                .AppendLine($"--->Country is {Name}")
+                .AppendLine($"\tarea is {Area}km2")
+                .AppendLine($"\tpopulation is {Population} millions people")
+                .ToString();
         }
     }
 }

@@ -1,0 +1,16 @@
+C:\Users\NoName\Desktop\27zd\z1(1)\bin\Debug\z1(1).exe.config
+C:\Users\NoName\Desktop\27zd\z1(1)\bin\Debug\z1(1).exe
+C:\Users\NoName\Desktop\27zd\z1(1)\bin\Debug\z1(1).pdb
+C:\Users\NoName\Desktop\27zd\z1(1)\obj\Debug\num1.csproj.AssemblyReference.cache
+C:\Users\NoName\Desktop\27zd\z1(1)\obj\Debug\num1.csproj.SuggestedBindingRedirects.cache
+C:\Users\NoName\Desktop\27zd\z1(1)\obj\Debug\MainWindow.g.cs
+C:\Users\NoName\Desktop\27zd\z1(1)\obj\Debug\App.g.cs
+C:\Users\NoName\Desktop\27zd\z1(1)\obj\Debug\z1(1)_MarkupCompile.cache
+C:\Users\NoName\Desktop\27zd\z1(1)\obj\Debug\z1(1)_MarkupCompile.lref
+C:\Users\NoName\Desktop\27zd\z1(1)\obj\Debug\MainWindow.baml
+C:\Users\NoName\Desktop\27zd\z1(1)\obj\Debug\z1(1).g.resources
+C:\Users\NoName\Desktop\27zd\z1(1)\obj\Debug\z1_1_.Properties.Resources.resources
+C:\Users\NoName\Desktop\27zd\z1(1)\obj\Debug\num1.csproj.GenerateResource.cache
+C:\Users\NoName\Desktop\27zd\z1(1)\obj\Debug\num1.csproj.CoreCompileInputs.cache
+C:\Users\NoName\Desktop\27zd\z1(1)\obj\Debug\z1(1).exe
+C:\Users\NoName\Desktop\27zd\z1(1)\obj\Debug\z1(1).pdb

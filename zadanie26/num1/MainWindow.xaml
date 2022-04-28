@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:num1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="456" Width="800">
     <Grid>
-        
+        <Button Content="Открыть" Margin="581,12,12,377" Click="Button_Click"/>
+        <Label Content="Найти" Margin="603,71,116,341"/>
+        <Label Content="Удаление" Margin="601,209,79,206"/>
+        <Button Content="Удалить" Margin="608,317,33,82" Click="Button_Click_3"/>
+        <Button Content="Выйти" Margin="603,376,45,16" Click="Button_Click_1"/>
+        <TextBox x:Name="textBoxCountryName" TextWrapping="Wrap" Text="TextBox" Margin="606,100,42,290" TextChanged="textBoxCountryName_TextChanged"/>
+        <TextBox x:Name="textBoxDeleteCountryName" TextWrapping="Wrap" Text="TextBox" Margin="599,247,33,138"/>
+        <TextBlock x:Name="textBlockXMLPathFile" TextWrapping="Wrap" Text="TextBlock" Margin="32,13,333,380"/>
+        <TextBlock x:Name="textBlockXMLFileContent" TextWrapping="Wrap" Text="TextBlock" Margin="47,82,259,114"/>
+        <Button Content="Добавить" Margin="82,379,304,23" Click="Button_Click_5"/>
+        <Button Content="Найти" Margin="587,163,19,228" Click="Button_Click_4"/>
+
     </Grid>
 </Window>

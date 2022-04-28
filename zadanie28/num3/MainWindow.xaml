@@ -1,0 +1,45 @@
+﻿<Window x:Class="num3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:num3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Click="Button_Click" Content="cl" Height="100" Width="100" BorderThickness="0" >
+            <Button.Clip>
+                <CombinedGeometry GeometryCombineMode="Union" >
+                    <CombinedGeometry.Geometry1>
+                        <CombinedGeometry GeometryCombineMode="Exclude">
+                            <CombinedGeometry.Geometry1>
+                                <EllipseGeometry Center="50,50" RadiusX="50" RadiusY="50"></EllipseGeometry>
+                            </CombinedGeometry.Geometry1>
+                            <CombinedGeometry.Geometry2>
+                                <EllipseGeometry Center="50,50" RadiusX="40" RadiusY="40"></EllipseGeometry>
+                            </CombinedGeometry.Geometry2>
+                        </CombinedGeometry>
+                    </CombinedGeometry.Geometry1>
+                    
+                </CombinedGeometry>
+            </Button.Clip>
+        </Button>
+        <Button Click="Button_Click_1" Content="cl" Height="100" Width="100" BorderThickness="0" >
+            <Button.Clip>
+                <CombinedGeometry GeometryCombineMode="Union" >
+                    <CombinedGeometry.Geometry1>
+                        <CombinedGeometry GeometryCombineMode="Exclude">
+                            <CombinedGeometry.Geometry1>
+                                <EllipseGeometry Center="50,50" RadiusX="50" RadiusY="50"></EllipseGeometry>
+                            </CombinedGeometry.Geometry1>
+                            <CombinedGeometry.Geometry2>
+                                <EllipseGeometry Center="50,50" RadiusX="40" RadiusY="40"></EllipseGeometry>
+                            </CombinedGeometry.Geometry2>
+                        </CombinedGeometry>
+                    </CombinedGeometry.Geometry1>
+
+                </CombinedGeometry>
+            </Button.Clip>
+        </Button>
+    </Grid>
+</Window>

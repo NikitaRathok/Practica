@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<libery>
+  <book name="Робинзон Крузо">
+    <author>Даниэля Дефо</author>
+    <relizeyear>1721</relizeyear>
+  </book>
+  <book name="Вий">
+    <author>Гоголь</author>
+    <relizeyear>1891</relizeyear>
+  </book>
+  <book name="вечер на хуторе близ диканьки">
+    <author>Гоголь</author>
+    <relizeyear>1892</relizeyear>
+  </book>
+</libery>

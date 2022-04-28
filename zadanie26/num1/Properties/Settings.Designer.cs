@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace num1.Properties
+namespace z1_1_.Properties
 {
 
 
