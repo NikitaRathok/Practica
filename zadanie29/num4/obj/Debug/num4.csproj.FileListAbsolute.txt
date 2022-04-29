@@ -1,0 +1,11 @@
+C:\TRASH\Практика c#\Practica\zadanie29\num4\obj\Debug\num4.csproj.SuggestedBindingRedirects.cache
+C:\TRASH\Практика c#\Practica\zadanie29\num4\obj\Debug\num4.Form1.resources
+C:\TRASH\Практика c#\Practica\zadanie29\num4\obj\Debug\num4.Properties.Resources.resources
+C:\TRASH\Практика c#\Practica\zadanie29\num4\obj\Debug\num4.csproj.GenerateResource.cache
+C:\TRASH\Практика c#\Practica\zadanie29\num4\obj\Debug\num4.csproj.CoreCompileInputs.cache
+C:\TRASH\Практика c#\Practica\zadanie29\num4\bin\Debug\num4.exe.config
+C:\TRASH\Практика c#\Practica\zadanie29\num4\bin\Debug\num4.exe
+C:\TRASH\Практика c#\Practica\zadanie29\num4\bin\Debug\num4.pdb
+C:\TRASH\Практика c#\Practica\zadanie29\num4\obj\Debug\num4.exe
+C:\TRASH\Практика c#\Practica\zadanie29\num4\obj\Debug\num4.pdb
+C:\TRASH\Практика c#\Practica\zadanie29\num4\obj\Debug\num4.csproj.AssemblyReference.cache

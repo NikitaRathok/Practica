@@ -21,7 +21,7 @@ namespace num2.Models
             drawingContext.DrawEllipse(Brushes.Green, (Pen)null, new Point(123,11), 123, 123);
             drawingContext.DrawEllipse(Brushes.Black, (Pen)null, new Point(123, 11), 100, 100);
             drawingContext.DrawEllipse(Brushes.Orange, (Pen)null, new Point(123, 11), 60, 60);
-
+            drawingContext.DrawEllipse((Brush)null, new Pen(Brushes.Black, 2), new Point(300, 200), 200, 100);
             base.OnRender(drawingContext);
             
         }
