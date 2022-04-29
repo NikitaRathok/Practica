@@ -1,4 +1,6 @@
 ﻿using Microsoft.Win32;
+using num1.Interfaces;
+using num1.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -14,9 +16,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using num1.Interfaces;
-using num1.Models;
-using num1.Share;
 
 namespace num1
 {
@@ -28,12 +27,10 @@ namespace num1
         private readonly IXmlWorker _worker;
         private bool IsFileOpened = false;
         private string _xmlFilePath;
-
         public MainWindow()
         {
             InitializeComponent();
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var dialog = new OpenFileDialog();
@@ -80,7 +77,7 @@ namespace num1
         {
             textBlockXMLFileContent.Text = "==========Contries========"
                 + Environment.NewLine;
-            
+
             foreach (var country in countries)
             {
                 textBlockXMLFileContent.Text += country.ToString();

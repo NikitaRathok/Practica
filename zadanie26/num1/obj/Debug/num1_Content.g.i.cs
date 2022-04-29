@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("files/country.xml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("files/countrys.xml")]
 
 

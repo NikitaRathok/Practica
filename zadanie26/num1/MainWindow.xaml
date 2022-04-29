@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:num1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="456" Width="800">
+        Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button Content="Открыть" Margin="581,12,12,377" Click="Button_Click"/>
         <Label Content="Найти" Margin="603,71,116,341"/>

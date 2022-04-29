@@ -1,13 +1,12 @@
-﻿using System;
+﻿using num1.Interfaces;
+using num1.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using num1.Models;
-using num1.Interfaces;
 using System.Xml;
 using Microsoft.Build.Framework;
-using System.IO.Log;
 
 namespace num1.Share
 {
@@ -141,7 +140,7 @@ namespace num1.Share
                     || ex is NullReferenceException)
                 {
                     //_logger.LogError(ex.Message, ex.StackTrace,
-                      //  nameof(childNode.InnerText));
+                    //  nameof(childNode.InnerText));
                 }
             }
             return country;
