@@ -1,0 +1,2 @@
+C:\TRASH\Практика c#\Practica\zadanie34\SetupProject1\bin\Debug\SetupProject1.msi
+C:\TRASH\Практика c#\Practica\zadanie34\SetupProject1\bin\Debug\SetupProject1.wixpdb

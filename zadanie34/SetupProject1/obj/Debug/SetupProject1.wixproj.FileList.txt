@@ -1,0 +1,6 @@
+obj\Debug\Product.wixobj
+C:\TRASH\Практика c#\Practica\zadanie34\SetupProject1\bin\Debug\SetupProject1.msi
+C:\TRASH\Практика c#\Practica\zadanie34\SetupProject1\bin\Debug\SetupProject1.wixpdb
+obj\Debug\SetupProject1.wixproj.BindContentsFileListnull.txt
+obj\Debug\SetupProject1.wixproj.BindOutputsFileListnull.txt
+obj\Debug\SetupProject1.wixproj.BindBuiltOutputsFileListnull.txt
